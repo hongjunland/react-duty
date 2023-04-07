@@ -1,17 +1,16 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { RecoilRoot } from "recoil";
+import SigninPage from "./pages/SigninPage";
 
 function App() {
   return (
-    <div className="App">
-      <h1>123123</h1>
-      <h1>123123</h1>
-      <h1>123123</h1>
-      <h1>123123</h1>
-      <h1>123123</h1>
-      <h1>123123</h1>
-      <h1>123123</h1>
-      <h1>123123</h1>
-      <h1>123123</h1>
-    </div>
+    <RecoilRoot>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/signin" element={<SigninPage />} />
+        </Routes>
+      </BrowserRouter>
+    </RecoilRoot>
   );
 }
 
