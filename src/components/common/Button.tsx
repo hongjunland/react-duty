@@ -16,9 +16,14 @@ function Button({ onClick, children, type, disabled }: ButtonProps) {
 }
 
 const StyledButton = styled.button<ButtonProps>`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: white;
+  font-weight: bold;
+  margin-top: 1vh;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #333;
+  width: 80vw;
+  height: 5vh;
 `;
 
 export default Button;

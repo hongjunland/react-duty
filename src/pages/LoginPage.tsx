@@ -9,8 +9,8 @@ export function LoginPage() {
 
   return (
     <LoginContainer>
-      <h1>로그인</h1>
       <Form onSubmit={handleSubmit}>
+        <img src='/logo.png' alt="logo"/>
         <Button type="submit">Google로 계속하기</Button>
         <Button type="submit">Apple로 계속하기</Button>
       </Form>
